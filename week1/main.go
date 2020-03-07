@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+//Create a function that receives a string “1,4,5,6,3,5, 6” as param, and returns a list of integers
+
 func main() {
 	l, err := ReturnIntList("1, 2, 3,4, 5, 6")
 	if err != nil {
@@ -13,11 +15,6 @@ func main() {
 	}
 	fmt.Println(l)
 
-	l, err = ReturnIntList("1, 2, 3,4, 5, 6")
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println(l)
 }
 
 func ReturnIntList(myStr string) ([]int, error) {
